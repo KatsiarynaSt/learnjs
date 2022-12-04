@@ -1,38 +1,8 @@
-console.log('hello')
-
-function toReadable (number) {
-  if (number === 1) {
-    return 'one'
-  }
-  if (number === 2) {
-    return 'two'
-  }
-  if (number === 3) {
-    return 'three'
-  }
-  if (number === 4) {
-    return 'four'
-  }
-  if (number === 5) {
-    return 'five'
-  }
-  if (number === 6) {
-    return 'six'
-  }
-  if (number === 7) {
-    return 'seven'
-  }
-  if (number === 8) {
-    return 'eight'
-  }
-  if (number === 9) {
-    return 'nine'
-  }
-  if (number === 10) {
-    return 'ten'
-  }
+const number = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten']
+function toReadable (index) {
+  return number[index - 1]
 }
 
-for (let i = 1; i < 11; i++) {
+for (let i = 1; i < 100; i++) {
   console.log('to readable. result ' + i + ': ', toReadable(i))
 }
